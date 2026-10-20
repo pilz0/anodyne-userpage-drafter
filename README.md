@@ -18,5 +18,11 @@ ruby log-pref.rb --csv logs.csv -p preferences.json
 
 #### Journal exported logs
 ```shell
-ruby dkinplot.rb --journal journal_export.json -p preferences.json
+ruby log-pref.rb --journal journal_export.json -p preferences.json
+```
+
+### Usage with nix
+```shell
+nix develop .
+log-pref --journal journal_export.json -p preferences.json
 ```
